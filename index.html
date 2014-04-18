@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://www.blogo.it/blogo-app/#sport -->
+<html lang="it"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Blogo App</title>
+    <meta name="description" content="Resta aggiornato sulle ultime notizie dall&#39;italia e dal mondo con l&#39;app di Blogo personalizzabile con le notizie da tuoi blog preferiti. Scarica, leggi e guarda i video e le foto in esclusiva">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <!--[if IE 8 ]>
+        <link rel="stylesheet" href="/css/responsive/app/ie8fix.css">
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/img/responsive/app/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/responsive/app/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/responsive/app/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/responsive/app/apple-touch-icon-114x114.png">
+</head>
+<body>
+    <div class="container">
+        <div class="sixteen columns">
+            <div class="slim-header"><a href="http://www.blogo.it/blogo-app/#"><img src="img/blogo-logo.png" alt=""></a></div>
+        </div>
+
+        <div class="one-third column phones">
+
+            <div id="iphone">
+                <div id="video-button" class="paused"></div>
+                
+                <!-- iPhone Glare -->
+                <div id="iphone-glare" onclick="playvideo();"></div>
+                
+                <!-- HTML5 Video -->
+                <div class="video-container">
+                    <video controls="" id="vid" preload="auto" loop="loop" autoplay="autoplay" poster="/img/responsive/app/poster.jpg">
+                        <source id="video_mp4" src="video/home.mp4" type="video/mp4">
+                        <source id="video_webm" src="video/home.webm" type="video/webm">
+                        <source id="video_ogg" src="video/gustoblog.oggtheora.ogv" type="video/ogg">
+                    </video>
+                </div>
+                <script type="text/javascript" async="" src="js/ga.js"></script><script type="text/javascript">
+                    function playvideo(){
+                        document.getElementById("vid").play();
+                        video.play();
+                    }
+                </script>
+            </div>
+            <div id="android">
+                
+            </div>
+        </div>
+
+        <div class="two-thirds column">
+            <div class="title-cover">
+                <h2>La <strong>tua</strong> informazione</h2>
+                <h4>libera, independente, mobile. </h4>
+            </div>
+            <p class="text-cover">Segui le notizie, le foto e i video che fanno al caso tuo scegliendo tra più di 30 magazine specializzati in 7 aree tematiche, a portata di pollice</p>
+            <p class="label-cover">Disponibile gratis su:</p>
+            <a href="https://itunes.apple.com/us/app/blogo/id338231723?mt=8" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;app_download&#39;, &#39;link_landing_blogo&#39;, &#39;iOs&#39;]);">
+                <img src="img/app-store.png" alt="">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=it.blogo.blogo" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;app_download&#39;, &#39;link_landing_blogo&#39;, &#39;Android&#39;]);">
+                <img src="img/play-google.png" alt="">
+            </a>
+        </div>
+
+        <div class="sixteen columns">
+            <div class="item-right">
+                <span class="icon-quicklist"></span>
+                <h4>Quicklist tematica</h4>
+                <p><i>Scegli</i> i temi che ti interessano e tienili a portata di tap</p>
+            </div>
+        </div>
+        <div class="sixteen columns">
+            <div class="item-left">
+                <span class="icon-sources"></span>
+                <h4>Gestione delle fonti</h4>
+                <p><i>Seleziona</i> le tue fonti preferite tra oltre 30 magazine specializzati</p>
+            </div>
+        </div>
+        <div class="sixteen columns">
+            <div class="item-right">
+                <span class="icon-navigation"></span>
+                <h4>Navigazione veloce</h4>
+                <p><i>Scorri</i> tra canali e articoli con semplici gesti</p>
+            </div>
+        </div>
+        <div class="sixteen columns">
+            <div class="item-left">
+                <span class="icon-favorites"></span>
+                <h4>Preferiti</h4>
+                <p><i>Salva</i> gli articoli per averli sempre a disposizione, anche offline</p>
+            </div>
+        </div>
+        <div class="sixteen columns">
+            <div class="item-right">
+                <span class="icon-multimedia"></span>
+                <h4>Multimedia</h4>
+                <p><i>Guarda</i> ogni giorno foto e video di alta qualità</p>
+            </div>
+        </div>
+        <div class="sixteen columns">
+            <div class="item-left">
+                <span class="icon-notifications"></span>
+                <h4>Notifiche</h4>
+                <p><i>Ricevi</i> un avviso per le notizie che proprio non puoi perdere</p>
+            </div>
+        </div>
+
+    </div><!-- container -->
+    <div id="footer">
+        <div class="container">
+            <div class="sixteen columns">
+                <h3>I temi</h3>
+                <div id="mySwipe" class="swipe" style="max-width: 850px; margin: 0px auto; visibility: visible;">
+                    <div class="swipe-wrap" style="width: 5950px;">
+                        <div class="slide" data-index="0" style="width: 850px; left: 0px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(-850px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-motori.jpg" alt="motori">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">Motori</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Guarda i test drive, leggi le recensioni e sfoglia le gallerie fotografiche dei modelli auto e moto in anteprima su Autoblog e Motoblog. E ancora, segui la F1, la MotoGP, la SBK ed il WRC.</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="1" style="width: 850px; left: -850px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(0px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-sport.jpg" alt="sport">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">Sport</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Guarda i video, sfoglia le fotogallerie e segui in diretta con i nostri liveblogging le partite e le finali degli eventi sportivi più importanti dal calcio al rugby.</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="2" style="width: 850px; left: -1700px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(850px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-entertainment.jpg" alt="entertainment">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">Entertainment</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Guarda i video, leggi gli articoli e sfoglia le gallerie fotografiche sui vip del cinema, della musica, della televisione e di tutti i personaggi del gossip in italia e nel mondo.</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="3" style="width: 850px; left: -2550px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(850px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-lifestyle.jpg" alt="lifestyle">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">Lifestyle</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Guarda i video, leggi gli articoli e sfoglia le gallerie fotografiche degli approfonfimenti sui viaggi, sugli eventi di cultura, design e lifestyle in Italia e nel mondo.</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="4" style="width: 850px; left: -3400px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(850px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-donna.jpg" alt="donna">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">Donna</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Guarda i video, leggi gli articoli e sfoglia le gallerie fotografiche della rivista digitale dedicate alle donne con approfondimenti su moda, bellezza, benessere, gossip, coppia e vita da mamma.</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="5" style="width: 850px; left: -4250px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(850px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-tech.jpg" alt="tech">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">Tech</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Guarda i video, leggi le recensioni e sfoglia le gallerie fotografiche degli utlimi prodotti di tecnologia per restare aggiornato su smartphone, videogames, macchine fotografiche, social e internet.</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="6" style="width: 850px; left: -5100px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate(850px, 0px) translateZ(0px);">
+                            <div class="one-third column-fluid alpha">
+                                <img src="img/tema-news.jpg" alt="news">
+                            </div>
+                            <div class="two-thirds column-fluid omega">
+                                <div class="logo-small">
+                                    <div class="b-part"><span aria-hidden="true" class="icon-blogo"></span></div>
+                                    <div class="t-part">
+                                        <p class="line-logo-small"></p>
+                                        <p class="txt-logo-small">News</p>
+                                        <p class="line-logo-small"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p>Resta aggiornato sulle ultime notizie di attualità, politica, economia, cronaca, estero e scoop dall'italia e dal mondo. Scarica, leggi e guarda i video e le foto in esclusiva su fatti, personaggi ed eventi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <button class="prev" onclick="mySwipe.prev()">prev</button> 
+                <button class="next" onclick="mySwipe.next()">next</button>
+                
+                <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+                
+
+                <script>
+                    var elem = document.getElementById('mySwipe'),
+                        hash_arr = window.location.hash.split('#'),
+                        theme = hash_arr[1] || '',
+                        arr = ["motori", "sport", "entertainment", "lifestyle", "donna", "tech", "news", "06blog", "tvblog", "petsblog", "gustoblog", "melablog", "gossipblog"],
+                        current_slide = 0,
+                        img_url = 'img/__theme__.jpg',
+                        video_url = 'video/__theme__',
+                        video_mp4 = $("#video_mp4"),                      
+                        video_webm = $("#video_webm"),
+                        video = video_mp4.parent();
+                        
+                    window.mySwipe = Swipe(elem, {
+                        startSlide: current_slide,
+                        // auto: 3000,
+                        // continuous: true,
+                        // disableScroll: true,
+                        // stopPropagation: true,
+                        // callback: function(index, element) {},
+                        // transitionEnd: function(index, element) {}
+                    });
+                    
+                    if (window.location.hash && ($.inArray(theme, arr) !== -1) ) {
+                        update(theme);
+                    }
+
+                    $(window).bind("hashchange", function(){
+                        hash_arr = window.location.hash.split('#');
+                        theme = hash_arr[1] || '';
+                        if ( $.inArray(theme, arr) !== -1 ) {
+                            update(theme);
+                        } else {
+                            update('default');
+                        }
+                    });
+
+                    function update(theme){
+                        // change img
+                        $("body").css("background", "url(" + img_url.replace("__theme__", theme) + ") no-repeat scroll left 0px #fff");
+                        // change video
+                        video_mp4.attr("src", video_url.replace("__theme__", theme) + '.mp4');
+                        video_webm.attr("src", video_url.replace("__theme__", theme) + '.webm');                        
+                        // reload video
+                        video.load();
+                        // change slide
+                        current_slide = arr.indexOf(theme);
+                        mySwipe.slide(current_slide);
+                    }
+                    
+                    // Google Analytics script inclusion
+                    var _gaq = _gaq || [];
+                    _gaq.push(
+                    ['gaGlobal._setAccount', 'UA-19778070-1'],
+                    ['gaGlobal._setDomainName', 'none'],
+                    ['gaGlobal._setAllowLinker', true],
+                    ['gaGlobal._trackPageview'],
+                    ['gaLocal._setAccount', 'UA-23281133-1'],
+                    ['gaLocal._setDomainName', 'none'],
+                    ['gaLocal._setAllowLinker', true],
+                    ['gaLocal._trackPageview'],
+                    ['gaLobal._trackPageLoadTime'],
+                    ['gaOld._setAccount', 'UA-123290-22'],
+                    ['gaOld._setDomainName', 'none'],
+                    ['gaOld._trackPageview']
+                    );
+                    (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(ga, s);
+                    })();
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
