@@ -18,6 +18,10 @@
     <link rel="apple-touch-icon" href="/img/responsive/app/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/responsive/app/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/responsive/app/apple-touch-icon-114x114.png">
+
+    <script type="text/javascript">
+            FB.Canvas.setSize({ width: 760, height: 1271 });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -191,5 +195,33 @@
                     })();
 
                 </script>
+
+
+          
+
+
+                <div id="fb-root"></div>
+                <script>
+                  window.fbAsyncInit = function() {
+                    FB.init({
+                      appId      : '587719127987392',
+                      status     : true,
+                      xfbml      : true
+                    });
+                  };
+
+                  (function(d, s, id){
+                     var js, fjs = d.getElementsByTagName(s)[0];
+                     if (d.getElementById(id)) {return;}
+                     js = d.createElement(s); js.id = id;
+                     js.src = "//connect.facebook.net/en_US/all.js";
+                     fjs.parentNode.insertBefore(js, fjs);
+                   }(document, 'script', 'facebook-jssdk'));
+                </script>
+
+
+
+
+
 
 </body></html>
