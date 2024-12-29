@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista della Spesa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista della Spesa</h1>
+    <ul id="shopping-list"></ul>
+    <button id="clear">Cancella selezioni</button>
+
+    <script>
+        // Lista della spesa
+        const items = [
+            "Scottex/rotolone",
+            "Carta igienica (4/6)",
+            "Fazzoletti",
+            "Piatti usa e getta",
+            "Scotch carta",
+            "Bicchieri",
+            "Cereali gialli (cornflakes per Irene)",
+            "6 yogurt interi alla frutta",
+            "2 yogurt senza lattosio alla frutta (no ananas)",
+            "Caffè",
+            "Fette biscottate",
+            "1 bottiglia di olio",
+            "1 pacco di sale fino",
+            "1 pacco di sale grosso",
+            "Aglio",
+            "Pane casareccio",
+            "Pomodorini",
+            "Insalata in busta",
+            "Carne varia (ricordare carne per brodo)",
+            "Fettuccine",
+            "Vino bianco per cucinare",
+            "Condimento da valutare sul momento",
+            "Lenticchie",
+            "Finocchi",
+            "Carote",
+            "Sedano",
+            "Cipolla",
+            "Mostarda di frutta per bollito",
+            "Taralli/patatine bianche e Crick Crock",
+            "Vin brulé",
+            "1 litro di latte parzialmente scremato",
+            "Ingredienti per frolla e marmellata",
+            "Passata di pomodoro (per polenta e altre salsicce)",
+            "Ananas",
+            "Mele",
+            "Banane",
+            "Pere",
+            "Mandarini",
+            "Margarina per la frolla",
+            "Amaro da scegliere",
+            "Castagne",
+            "Diavolina",
+            "Acqua"
+        ];
+
+        const listElement = document.getElementById("shopping-list");
+
+        // Funzione per ottenere i cookie
+        function getCookie(name) {
+            const cookies = document.cookie.split("; ");
+            for (const cookie of cookies) {
+                const [key, value] = cookie.split("=");
+                if (key === name) return value.split(",");
+            }
+            return [];
+        }
+
+        // Funzione per impostare i cookie
+        function setCookie(name, value) {
+            document.cookie = `${name}=${value.join(",")}; path=/; max-age=31536000`;
+        }
+
+        // Elementi completati salvati nei cookie
+        const completedItems = getCookie("completedItems");
+
+        // Creazione della lista
+        items.forEach((item, index) => {
+            const li = document.createElement("li");
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.checked = completedItems.includes(index.toString());
+            checkbox.addEventListener("change", () => {
+                if (checkbox.checked) {
+                    completedItems.push(index.toString());
+                } else {
+                    const itemIndex = completedItems.indexOf(index.toString());
+                    if (itemIndex > -1) completedItems.splice(itemIndex, 1);
+                }
+                setCookie("completedItems", completedItems);
+            });
+            li.appendChild(checkbox);
+            li.appendChild(document.createTextNode(item));
+            listElement.appendChild(li);
+        });
+
+        // Pulsante per cancellare le selezioni
+        document.getElementById("clear").addEventListener("click", () => {
+            completedItems.length = 0;
+            setCookie("completedItems", completedItems);
+            document.querySelectorAll("input[type='checkbox']").forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+        });
+    </script>
+</body>
+</html>
